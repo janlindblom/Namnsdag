@@ -28,17 +28,11 @@ perldoc command.
 
 You can also look for information at:
 
-    RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Namnsdag
+    GitHub
+        https://github.com/janlindblom/Namnsdag
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Namnsdag
-
-    CPAN Ratings
-        http://cpanratings.perl.org/d/Namnsdag
-
-    Search CPAN
-        http://search.cpan.org/dist/Namnsdag/
+    GitHub Issues
+        https://github.com/janlindblom/Namnsdag/issues
 
 
 COPYRIGHT AND LICENCE
