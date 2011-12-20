@@ -1,1 +1,49 @@
+Namnsdag
+
 This is the Perl Namnsdag library.
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+Alternatively, to install with ExtUtils::MakeMaker, you can use the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Namnsdag
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Namnsdag
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Namnsdag
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Namnsdag
+
+    Search CPAN
+        http://search.cpan.org/dist/Namnsdag/
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2011 Jan Lindblom
+
+This program is released under the following license: BSD
+

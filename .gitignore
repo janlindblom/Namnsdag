@@ -1,2 +1,12 @@
-
 .DS_Store
+
+Perl/blib*
+Perl/Makefile
+Perl/Makefile.old
+Perl/Build
+Perl/_build*
+Perl/pm_to_blib*
+Perl/*.tar.gz
+Perl/.lwpcookies
+Perl/Namnsdag-*
+Perl/cover_db

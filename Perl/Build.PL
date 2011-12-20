@@ -1,14 +1,17 @@
-#!/usr/bin/env perl
+use strict;
+use warnings;
 use Module::Build;
 
-my $build = Module::Build->new(
-	module_name	=> 'Namnsdag',
-	license		=> 'BSD',
-	dist_author => 'Jan Lindblom <lindblom.jan@gmail.com>',
-	requires	=> { 'DBI'			=> '1.616.0',
-					 'DBD::SQLite'	=> '1.310.0' },
-	);
+my $builder = Module::Build->new(
+    module_name         => 'Namnsdag',
+    license             => 'BSD',
+    dist_author         => 'Jan Lindblom <lindblom.jan@gmail.com>',
+    dist_version_from   => 'lib/Namnsdag.pm',
+    build_requires => {
+        'Test::More' => 0,
+    },
+    add_to_cleanup      => [ 'Namnsdag-*' ],
+    create_makefile_pl => 'traditional',
+);
 
-$build->dispatch('build');
-$build->dispatch('test', verbose => 1);
-$build->dispatch('install');
+$builder->create_build_script();
