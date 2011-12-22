@@ -3,6 +3,12 @@ package Namnsdag;
 use warnings;
 use strict;
 
+require Exporter;
+@ISA = qw(Exporter);
+@EXPORT = qw/namnsdag/;
+
+use Namnsdag::Storage qw/names/;
+
 =head1 NAME
 
 Namnsdag - The Perl Namnsdag library.
@@ -26,9 +32,6 @@ Namnsdag retrieves the namnsdag of a given day.
 
 =head1 EXPORT
 
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
 =head1 FUNCTIONS
 
 =head2 namnsdag
@@ -44,11 +47,7 @@ Jan Lindblom, C<< <lindblom.jan at gmail.com> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-namnsdag at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Namnsdag>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
+Please report any bugs or feature requests to L<https://github.com/janlindblom/Namnsdag/issues>.
 
 
 =head1 SUPPORT
@@ -60,23 +59,11 @@ You can find documentation for this module with the perldoc command.
 
 You can also look for information at:
 
-=over 4
+=over 1
 
-=item * RT: CPAN's request tracker
+=item * GitHub Issues:
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Namnsdag>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Namnsdag>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Namnsdag>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Namnsdag/>
+L<https://github.com/janlindblom/Namnsdag/issues>
 
 =back
 
@@ -88,7 +75,7 @@ L<http://search.cpan.org/dist/Namnsdag/>
 
 Copyright 2011 Jan Lindblom, all rights reserved.
 
-This program is released under the following license: BSD
+This program is released under the following license: bsd
 
 
 =cut
